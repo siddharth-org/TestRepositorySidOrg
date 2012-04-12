@@ -1,0 +1,9 @@
+<apex:page >
+
+	<apex:panelBar switchType="ajax">
+        <apex:panelBarItem label="Item 1">data 1</apex:panelBarItem>
+        <apex:panelBarItem label="Item 2" expanded="false">data 2</apex:panelBarItem>
+        <apex:panelBarItem label="Item 3">data 3</apex:panelBarItem>
+    </apex:panelBar>
+    
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:page controller="ESPL_RecordCreationCtl">
+    <apex:Form >
+        <apex:messages />
+        <apex:commandButton action="{!updateRecord}" value="Update Record"/>
+    </apex:Form>
+</apex:page>

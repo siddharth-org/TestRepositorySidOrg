@@ -1,0 +1,24 @@
+<apex:page controller="SelectCheckboxSampleCtl">
+	<apex:form >
+		<div style="float:left;display:block;">
+			<span style="overflow:auto">
+		        <apex:selectCheckboxes value="{!countries}" layout="lineDirection">
+		            <apex:selectOptions value="{!items}"/>
+		        </apex:selectCheckboxes><br/>
+	        </span>
+        </div>
+        <apex:commandButton value="Test" action="{!test}" rerender="out" status="status"/>
+    </apex:form>
+    
+    <apex:outputPanel id="out">
+        <apex:actionstatus id="status" startText="testing...">
+            <apex:facet name="stop">
+                <apex:outputPanel >
+                    <p>You have selected:</p>
+                    <apex:dataList value="{!countries}" var="c">{!c}</apex:dataList>
+                </apex:outputPanel>
+            </apex:facet>
+        </apex:actionstatus>
+    </apex:outputPanel>
+    
+</apex:page>

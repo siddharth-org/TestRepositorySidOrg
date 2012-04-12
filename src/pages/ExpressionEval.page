@@ -1,0 +1,22 @@
+<apex:page standardController="Test_Object__c">
+
+	<script type="text/javascript">
+	
+	function evalExpression(pExpression){
+		var exprText = pExpression;
+		alert(eval(exprText));
+	}
+	
+	</script>
+
+
+	<apex:pageBlock >
+		<apex:form >
+			<apex:inputField value="{!Test_Object__c.Exp_Result__c}"/><br/><br/>
+			<div align="left">
+				<apex:commandButton value="Evaluate" oncomplete="evalExpression('{!Test_Object__c.Exp_Result__c}')"/>
+			</div>
+		</apex:form>
+	</apex:pageBlock>
+	
+</apex:page>

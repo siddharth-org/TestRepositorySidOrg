@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ChatterTest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ChatterTests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Body --></label>
+        <name>Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chatter Post --></label>
+        <name>Chatter_Post__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Accepted --></label>
+        <name>Is_Accepted__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

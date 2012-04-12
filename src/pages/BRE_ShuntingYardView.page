@@ -1,0 +1,6 @@
+<apex:page controller="BRE_ShuntingYardCtl">
+    <apex:form >
+        <apex:inputText value="{!expressionStr}"/>
+        <apex:commandButton value="Parse" action="{!parse}"/>   
+    </apex:form>
+</apex:page>
